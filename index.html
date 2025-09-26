@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malatya City Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand px-4 custom-navbar"> <!-- px4 sağ ve soldan iç boşluk ekler custom navbar ise css dosyamızda tanımlanıyor arka plana renk vermek için kullanılıyor -->
+            <div class=" container-fluid justify-content-between"><!-- container fluid bootsrap sınıfı sayfa genişliğine göre tamamen yayılan bir kutu oluşturur kenarlara yapışır. justify content between ise içeriği iki yana yayar sol kısma logo gider sağa menü. -->
+                <a class="navbar-brand text-white fw-bold" href="#">Malatya Guide Tour</a>
+                 <div class="navbar-nav flex-row"><!-- flex-row sınıfı ile menü elemanları yan yana dizilir -->
+                    <a class="nav-link nav-item-link" href="index.html">Home</a> <!-- nav item link css de tanımlı olacak  -->
+                    <a class="nav-link nav-item-link" href="places.html">Places</a>
+                    <a class="nav-link nav-item-link" href="foods.html">Foods</a>
+                    <a class="nav-link nav-item-link" href="contact.html">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+   <main class="container my-5">
+        <section class="hero-section">
+            <div class="hero-content text-center">
+                <h1>Explore Malatya</h1>
+                <p>Learn more about Malatya’s culture and attractions.</p>
+            <a href="places.html" class="btn btn-primary btn-lg">Explore Now</a>
+        </section>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2023 Malatya Guide Tour. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,218 @@
+.custom-navbar {
+    background-color: #ffa726  /*custom navbar olanlara turuncu arka plan veriyor */
+    
+}
+.nav-item-link{ /*menü linklerine stil veriyor, bir de böyle noktalı olanlar class selector oluyor  */
+    color: white;
+    font-weight: 500; /* yazıyı kalınlaştırıyor bu kısım */
+    font-size: medium;
+    padding-right: 10px; /* sağa boşluk bırakıyor */
+    
+}
+.navbar-nav {
+    flex-wrap: wrap; /* mobilde satır taşımasına izin ver */
+    
+}
+.nav-item-link:hover{ /*pseudo class bu*/
+    color: #4caf50; /* yazının üzerine gelince yeşile boyuyo hover bu işe yarıyor */
+}
+
+.hero-section { 
+    height: 500px;
+    background-image: url('https://wallpapercat.com/w/full/2/d/1/581159-3840x2160-desktop-4k-apricot-background-photo.jpg');
+    background-size : cover;
+    background-position: center;
+    color : white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.btn-primary { /*class override ediliyor burda bootsrap classını eziyoruz*/
+    background-color: #FF6200;
+    border-color: #FF6200;
+    font-size: 20px;
+    padding: 10px 20px; 
+}
+
+.btn-primary:hover {
+    background-color: #28A745;
+    border-color: #28A745;
+}
+
+
+section { /* tag selector tüm section etiketlerinin altına boşluk ekler */
+    
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    
+}
+
+figure {/*tag selector  , figure un amacı bir resmi falan açıklamasıyla birlikte gruplayarak sayfa yapısını semantik olarak güçlendirmektir*/
+    text-align: center;
+}
+figure img {
+    
+    width: 70%;
+    max-height: 500px;
+    object-fit:cover; /* resmi kapsayıcıya göre keser */
+    border-radius: 8px;
+}
+
+figcaption {
+    font-style: italic; 
+    font-size: 0.9rem;
+    margin-top: 6px;
+    color: #666;
+}
+.paragraph {
+    
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.paragraph::first-letter { /*pseudo element ilk harfi büyütmek ve renklendirmek için kullanılıyor  */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF6200;
+    float: left; /* solda durmasını sağlıyor */
+    margin-right: 10px; /* sağa boşluk bırakıyor */
+    font-size: 1.5rem;
+    color: #ffa726;
+    font-weight: bold;
+}
+.other-places-grid { /* responsive grid yapısı için kullanılıyor kutular ekran boyutuna göre otomatik yerleşir */
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap; /* ekran küçükse alt satura geçer*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.star {
+     /* yazı ile yıldız arasında boşluk */
+    color: gold; 
+}
+.rating {
+    display: inline-flex; /* yan yana satır içinde tutar flexbox kullanmışım burda  */
+    align-items: center;
+    gap: 5px; /* grid veya flexbox üzerinde bulunan elemanlar arasındaki boşluk için kullanılıyor */
+    margin-left: 60px; /* yıldız ile yazı arasında boşluk */
+}
+table { /*tag selector */
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff8f0;
+    font-size: 0.95rem;
+}
+
+caption { /*tag selector */
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px;
+}
+
+th, td { /*tag selector */
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+td img {
+    border-radius: 6px;
+    width: 100px;
+    
+}
+
+section.float-box p {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+ img[alt*="Köfte"] { /* alt attributei köfte olan resimlere stil veriyor , attribute selector*/
+    border: 2px solid #ffa726;
+}
+
+.left{ /* food sayfasındaki resimlerin sol tarafa yaslanması için kullanılıyor float parametresi sağlıyor bunu */
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+}
+.right{
+    float: right;
+    width: 30%;
+    margin-left: 20px;
+}
+#main-heading { /* id selector */
+    color: #FF6200;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-grid {
+    display: grid;                    /* grid layoutı etkinleştirir */
+    grid-template-columns: 1fr 1fr;   /* iki eşit sütun */
+    gap: 20px;                       /* sütunlar arası boşluk */
+    padding: 20px;                   /* iç boşluk */
+    background-color: #28A745;       /* hafif mavi arka plan */
+}
+
+.contact-form, .contact-info {
+    padding: 20px;                   /* iç boşluk */
+    background-color: rgba(255, 255, 255, 0.95);       /* beyaz arka plan css parametresi kullanmak için rgba kullandım */
+}
+
+.contact-form h2, .contact-info h2 {
+    font-size: 1.5rem;               /* başlık boyutu */
+    margin-bottom: 10px;             /* alt boşluk */
+}
+
+.contact-form p {
+    margin: 5px 0;                   /* paragraflar arası boşluk */
+    font-weight: bold;               /* kalın yazı */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;                     /* tam genişlik */
+    padding: 10px;                   /* iç boşluk */
+    margin-bottom: 10px;             /* alt boşluk */
+    border: 1px solid #ddd;          /* kenarlık */
+}
+
+.contact-form textarea {
+    height: 100px;                   /* textarea yüksekliği */
+}
+
+.contact-form button {
+    width: 100%;                     /* tam genişlik */
+    background-color: #FF6200;       /* turuncu buton */
+    border: none;                    /* kenarlık yok */
+    padding: 10px;                   /* iç boşluk */
+    color: white;                    /* beyaz yazı */
+}
+
+.contact-form button:hover {
+    background-color: #FF6200;       /* hoverda aynı renk */
+}
+
+.contact-info p {
+    margin: 5px 0;                   /* paragraflar arası boşluk */
+}
+
+.contact-info i {
+    margin-right: 10px;              /* ikonlar arası boşluk */
+    color: #FF6200;                  /* turuncu ikonlar */
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+}
